@@ -10,6 +10,6 @@ import Foundation
 
 protocol APIServiceType {
 
-    func getPhotos(completion: @escaping (Result<[Photo], Error>) -> ())
-    
+    func fetchPhotos(completion: @escaping (Result<[Photo], Error>) -> Void) 
+    func fetchMockComment(completion: @escaping (Result<[Photo], Error>) -> Void)
 }

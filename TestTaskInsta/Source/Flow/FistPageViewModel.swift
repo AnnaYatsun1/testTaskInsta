@@ -16,10 +16,10 @@ enum FistPageViewModelEvents {
 }
 
 class FistPageViewModel: BaseViewModel<FistPageViewModelEvents> {
-    let requestService: RequestService
+    let requestService: APIServiceType
     var photos = [Photo]()
 
-     init(requestService: RequestService) {
+     init(requestService: APIServiceType) {
          self.requestService = requestService
          
     }

@@ -54,7 +54,7 @@ class FistPageView: BaseView<FistPageViewModel>,UICollectionViewDelegate, UIColl
     //MARK: Public
     
     func reloadData() {
-        DispatchQueue.main.async {
+        dispatchOnMain {
             self.collectionView.reloadData()
         }
     }

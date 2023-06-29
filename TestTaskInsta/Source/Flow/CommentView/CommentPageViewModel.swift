@@ -13,13 +13,13 @@ enum CommentPageViewModelEvents {
 }
 
 class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
-    let requestService: RequestService
+    let requestService: APIServiceType
     var comments = [Photo]()
     private(set) var adapter: TableAdapter?
     
     //MARK: Init
     
-     init(requestService: RequestService) {
+     init(requestService: APIServiceType) {
          self.requestService = requestService
     }
     
@@ -52,7 +52,7 @@ class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
     }
 }
 
-
+// для рефакторинга что б одна сущность отвечала а создание таблици
 extension CommentPageViewModel {
 
     // MARK: - Public API

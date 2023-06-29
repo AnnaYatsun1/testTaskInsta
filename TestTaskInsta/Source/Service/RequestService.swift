@@ -24,7 +24,7 @@ class URLBuilder {
     }
 }
 
-class RequestService {
+class RequestService: APIServiceType {
     
     let session: URLSession
     let urlBuilder: URLBuilder

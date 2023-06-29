@@ -28,6 +28,16 @@ class CommentView: BaseView<CommentPageViewModel>, UITableViewDataSource, UITabl
                                 height: height)
     }
     
+    // MARK: Publick
+    
+    func reloadTable() {
+        dispatchOnMain  {
+            self.tableView.reloadData()
+        }
+    }
+    
+    // MARK: TableView
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.comments.count
     }

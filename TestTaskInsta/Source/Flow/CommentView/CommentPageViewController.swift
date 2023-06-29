@@ -14,9 +14,7 @@ class CommentPageViewController: BaseViewController<CommentView, CommentPageView
         self.view.backgroundColor = .white
        
         viewModel.getAllInfoPosts() {[weak self] in
-            DispatchQueue.main.async {
-                self?.rootView.tableView.reloadData()
-            }
+            self?.rootView.reloadTable()
         }
     }
 }

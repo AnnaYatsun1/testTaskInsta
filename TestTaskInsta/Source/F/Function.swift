@@ -22,6 +22,13 @@ public func when<Result>(_ condition: Bool, execute: () -> Result?) -> Result? {
     return condition ? execute() : nil
 }
 
+func dispatchOnMain(_ execute: (() -> ())?) {
+    DispatchQueue.main.async {
+        execute?()
+    }
+}
+
+
 
 public struct F {
     
