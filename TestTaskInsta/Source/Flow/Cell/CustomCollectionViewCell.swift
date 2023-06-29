@@ -156,7 +156,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
         }
 
         return (postImageURL, profileImageURL)
-        
     }
 }
 

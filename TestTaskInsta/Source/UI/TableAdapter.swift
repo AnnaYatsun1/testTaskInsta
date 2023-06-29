@@ -54,7 +54,7 @@ open class BaseCell<Model, Events>: UITableViewCell, AnyCellType {
     }
     
     open func fill(with model: Model) {
-//        fatalError("Abstract method used for child classes")
+
     }
 }
 

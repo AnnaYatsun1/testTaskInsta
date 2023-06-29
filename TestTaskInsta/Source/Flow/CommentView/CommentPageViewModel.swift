@@ -9,13 +9,18 @@ import UIKit
 
 
 enum CommentPageViewModelEvents { }
+protocol CommentPageViewModelProtocol {
+    var adapter: TableAdapter? { get }
+    var comments: [Photo] { get }
+    
+    func getPosts(completion: @escaping VoidHandler)
+}
 
-class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
-    
+class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents>,  CommentPageViewModelProtocol {
     private(set) var adapter: TableAdapter?
-    private let requestService: APIServiceType
+    private(set) var comments = [Photo]()
     
-    var comments = [Photo]()
+    private let requestService: APIServiceType
     
     //MARK: Init
     
@@ -31,7 +36,6 @@ class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
             case let .success(model):
                 self?.comments = model
                 completion()
-                guard let comm =  self?.comments else { return }
 //                self?.updateTable(with: comm)
             case let .failure(error):
                 print(error)

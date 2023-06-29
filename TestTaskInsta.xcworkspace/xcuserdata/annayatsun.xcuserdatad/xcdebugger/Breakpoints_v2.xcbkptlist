@@ -14,42 +14,10 @@
             filePath = "TestTaskInsta/Source/Flow/CommentView/CommentPageViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "getPosts(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7D780373-5E42-45BB-9A40-E7ADAE156105 - bb35c6563f4e0a65"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;TestTaskInsta.Photo&gt;, Swift.Error&gt;) -&gt; () in TestTaskInsta.CommentPageViewModel.getAllInfoPosts(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "TestTaskInsta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annayatsun/testTaskInsta/TestTaskInsta/Source/Flow/CommentView/CommentPageViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "596">
-               </Location>
-               <Location
-                  uuid = "7D780373-5E42-45BB-9A40-E7ADAE156105 - 969b5ce1544965dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;TestTaskInsta.Photo&gt;, Swift.Error&gt;) -&gt; () in TestTaskInsta.CommentPageViewModel.getPosts(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "TestTaskInsta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annayatsun/testTaskInsta/TestTaskInsta/Source/Flow/CommentView/CommentPageViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "596">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

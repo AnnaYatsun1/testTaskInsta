@@ -14,9 +14,15 @@ enum FistPageViewModelEvents {
     case reloadData
 }
 
-class InstaLineViewModel: BaseViewModel<FistPageViewModelEvents> {
+protocol InstaLineViewModelProtocol {
+    var photos: [Photo] { get }
+    func getPosts(completion: @escaping VoidHandler)
+}
+
+class InstaLineViewModel: BaseViewModel<FistPageViewModelEvents>, InstaLineViewModelProtocol {
+    
     private let requestService: APIServiceType
-    var photos = [Photo]()
+    private(set) var photos = [Photo]()
 
     // MARK: Init
     

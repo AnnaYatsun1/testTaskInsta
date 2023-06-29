@@ -28,8 +28,6 @@ func dispatchOnMain(_ execute: (() -> ())?) {
     }
 }
 
-
-
 public struct F {
     
     public typealias Handler<Type> = (Type) -> ()
