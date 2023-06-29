@@ -38,11 +38,9 @@ class CommentTableViewCell: BaseCell<Photo, EmptyModel> {
     }
     
     override func fill(with model: Photo) {
-        guard let aaa = model.user?.profileImage.small else { return }
-        guard let url = URL(string: aaa) else {return}
+        guard let profileImageString = model.user?.profileImage.small else { return }
+        guard let url = URL(string: profileImageString) else {return}
         avatarImage?.sd_setImage(with: url)
         userNameLabel.text = model.user?.username
     }
-    
-    
 }

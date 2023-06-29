@@ -8,12 +8,12 @@
 import UIKit
 
 
-class FirstPageViewController: BaseViewController<FistPageView, FistPageViewModel> {
+class InstaLineViewController: BaseViewController<InstaLineView, InstaLineViewModel> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        viewModel.getAllInfoPosts() {[weak self] in
+        viewModel.getPosts() {[weak self] in
             self?.rootView.reloadData()
         }
     }

@@ -8,12 +8,14 @@
 import UIKit
 
 class CommentView: BaseView<CommentPageViewModel>, UITableViewDataSource, UITableViewDelegate {
-    var tableView: UITableView!
+    
+    private var tableView: UITableView!
     
     // MARK: LifeCyrcle 
     override func configure() {
         super.configure()
-        tableView = UITableView(frame: bounds, style: .plain)
+        tableView = UITableView(frame: bounds,
+                                style: .plain)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(CommentTableViewCell.self)
@@ -30,7 +32,7 @@ class CommentView: BaseView<CommentPageViewModel>, UITableViewDataSource, UITabl
     
     // MARK: Publick
     
-    func reloadTable() {
+    public func reloadData() {
         dispatchOnMain  {
             self.tableView.reloadData()
         }
@@ -52,5 +54,4 @@ class CommentView: BaseView<CommentPageViewModel>, UITableViewDataSource, UITabl
 
         return cell
     }
-
 }

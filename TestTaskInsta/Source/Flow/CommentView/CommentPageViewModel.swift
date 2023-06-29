@@ -8,14 +8,14 @@
 import UIKit
 
 
-enum CommentPageViewModelEvents {
- 
-}
+enum CommentPageViewModelEvents { }
 
 class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
-    let requestService: APIServiceType
-    var comments = [Photo]()
+    
     private(set) var adapter: TableAdapter?
+    private let requestService: APIServiceType
+    
+    var comments = [Photo]()
     
     //MARK: Init
     
@@ -25,7 +25,7 @@ class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
     
     //MARK: Publick
     
-    func getAllInfoPosts(completion: @escaping VoidHandler) {
+    func getPosts(completion: @escaping VoidHandler) {
         requestService.fetchMockComment() { [weak self] result in
             switch result {
             case let .success(model):
@@ -39,7 +39,7 @@ class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
             
         }
     }
-//
+
     //MARK: Private
     
     private func updateTable(with models: [Photo]) {
@@ -52,7 +52,7 @@ class CommentPageViewModel: BaseViewModel<CommentPageViewModelEvents> {
     }
 }
 
-// для рефакторинга что б одна сущность отвечала а создание таблици
+// для рефакторинга что б одна сущность отвечала а создание таблици gне заимплеменчено
 extension CommentPageViewModel {
 
     // MARK: - Public API

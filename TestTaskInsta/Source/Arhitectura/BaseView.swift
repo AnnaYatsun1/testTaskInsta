@@ -26,9 +26,6 @@ class BaseView<ViewModel>: UIView {
     }
     
     func addButtonAction(action: @escaping () -> Void) {
-        buttonAction = action
-        // Add target to your button or any other UI element
-        // When the button is pressed, call the buttonAction closure
-        
+        buttonAction = action        
     }
 }

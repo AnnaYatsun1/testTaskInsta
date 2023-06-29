@@ -27,14 +27,13 @@
 		F58CE2482A4B4DAE00CFEBA2 /* APIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2472A4B4DAE00CFEBA2 /* APIServiceType.swift */; };
 		F58CE24A2A4B4DD500CFEBA2 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2492A4B4DD500CFEBA2 /* RequestService.swift */; };
 		F58CE24D2A4B4E0400CFEBA2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE24C2A4B4E0400CFEBA2 /* Photo.swift */; };
-		F58CE2502A4B4E3400CFEBA2 /* FistPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE24F2A4B4E3400CFEBA2 /* FistPageViewModel.swift */; };
-		F58CE2522A4B4E4B00CFEBA2 /* FistPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2512A4B4E4B00CFEBA2 /* FistPageView.swift */; };
-		F58CE2542A4B4E6C00CFEBA2 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2532A4B4E6C00CFEBA2 /* FirstPageViewController.swift */; };
+		F58CE2502A4B4E3400CFEBA2 /* InstaLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE24F2A4B4E3400CFEBA2 /* InstaLineViewModel.swift */; };
+		F58CE2522A4B4E4B00CFEBA2 /* InstaLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2512A4B4E4B00CFEBA2 /* InstaLineView.swift */; };
+		F58CE2542A4B4E6C00CFEBA2 /* InstaLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2532A4B4E6C00CFEBA2 /* InstaLineViewController.swift */; };
 		F58CE2572A4B4EA200CFEBA2 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2562A4B4EA200CFEBA2 /* Extensions+UIView.swift */; };
 		F58CE25B2A4B4F5400CFEBA2 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2592A4B4F5400CFEBA2 /* CustomCollectionViewCell.swift */; };
 		F58CE25C2A4B4F5400CFEBA2 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58CE25A2A4B4F5400CFEBA2 /* CustomCollectionViewCell.xib */; };
 		F58CE2642A4B521900CFEBA2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2632A4B521900CFEBA2 /* MainCoordinator.swift */; };
-		F58CE2662A4B587400CFEBA2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2652A4B587400CFEBA2 /* File.swift */; };
 		F58CE2692A4C356A00CFEBA2 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE2682A4C356A00CFEBA2 /* Extension+UIViewController.swift */; };
 		F58CE26B2A4C36BD00CFEBA2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE26A2A4C36BD00CFEBA2 /* Comment.swift */; };
 		F58CE26F2A4C397600CFEBA2 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE26D2A4C397600CFEBA2 /* CommentTableViewCell.swift */; };
@@ -97,14 +96,13 @@
 		F58CE2472A4B4DAE00CFEBA2 /* APIServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceType.swift; sourceTree = "<group>"; };
 		F58CE2492A4B4DD500CFEBA2 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		F58CE24C2A4B4E0400CFEBA2 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		F58CE24F2A4B4E3400CFEBA2 /* FistPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FistPageViewModel.swift; sourceTree = "<group>"; };
-		F58CE2512A4B4E4B00CFEBA2 /* FistPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FistPageView.swift; sourceTree = "<group>"; };
-		F58CE2532A4B4E6C00CFEBA2 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		F58CE24F2A4B4E3400CFEBA2 /* InstaLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaLineViewModel.swift; sourceTree = "<group>"; };
+		F58CE2512A4B4E4B00CFEBA2 /* InstaLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaLineView.swift; sourceTree = "<group>"; };
+		F58CE2532A4B4E6C00CFEBA2 /* InstaLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaLineViewController.swift; sourceTree = "<group>"; };
 		F58CE2562A4B4EA200CFEBA2 /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		F58CE2592A4B4F5400CFEBA2 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F58CE25A2A4B4F5400CFEBA2 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		F58CE2632A4B521900CFEBA2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		F58CE2652A4B587400CFEBA2 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F58CE2682A4C356A00CFEBA2 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		F58CE26A2A4C36BD00CFEBA2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		F58CE26D2A4C397600CFEBA2 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
@@ -256,7 +254,6 @@
 				F58CE2452A4B4D9500CFEBA2 /* Parser.swift */,
 				F58CE2472A4B4DAE00CFEBA2 /* APIServiceType.swift */,
 				F58CE2492A4B4DD500CFEBA2 /* RequestService.swift */,
-				F58CE2652A4B587400CFEBA2 /* File.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -275,9 +272,9 @@
 			children = (
 				F58CE2672A4C2DF200CFEBA2 /* CommentView */,
 				F58CE2582A4B4F3A00CFEBA2 /* Cell */,
-				F58CE24F2A4B4E3400CFEBA2 /* FistPageViewModel.swift */,
-				F58CE2512A4B4E4B00CFEBA2 /* FistPageView.swift */,
-				F58CE2532A4B4E6C00CFEBA2 /* FirstPageViewController.swift */,
+				F58CE24F2A4B4E3400CFEBA2 /* InstaLineViewModel.swift */,
+				F58CE2512A4B4E4B00CFEBA2 /* InstaLineView.swift */,
+				F58CE2532A4B4E6C00CFEBA2 /* InstaLineViewController.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -592,7 +589,7 @@
 			files = (
 				F58CE2412A4B4D4C00CFEBA2 /* BaseViewModel.swift in Sources */,
 				F58CE25B2A4B4F5400CFEBA2 /* CustomCollectionViewCell.swift in Sources */,
-				F58CE2522A4B4E4B00CFEBA2 /* FistPageView.swift in Sources */,
+				F58CE2522A4B4E4B00CFEBA2 /* InstaLineView.swift in Sources */,
 				F58CE2802A4C460900CFEBA2 /* CommentPageViewController.swift in Sources */,
 				F58CE2432A4B4D6700CFEBA2 /* BaseViewController.swift in Sources */,
 				F5DBD5EE2A4C5C3E00729AD9 /* TableAdapter.swift in Sources */,
@@ -605,16 +602,15 @@
 				F58CE23F2A4B4D2D00CFEBA2 /* BaseView.swift in Sources */,
 				F58CE2482A4B4DAE00CFEBA2 /* APIServiceType.swift in Sources */,
 				F58CE20D2A4B4C6C00CFEBA2 /* AppDelegate.swift in Sources */,
-				F58CE2662A4B587400CFEBA2 /* File.swift in Sources */,
 				F58CE24A2A4B4DD500CFEBA2 /* RequestService.swift in Sources */,
-				F58CE2542A4B4E6C00CFEBA2 /* FirstPageViewController.swift in Sources */,
+				F58CE2542A4B4E6C00CFEBA2 /* InstaLineViewController.swift in Sources */,
 				F58CE2742A4C3F5A00CFEBA2 /* Extension+UITableView.swift in Sources */,
 				F58CE2772A4C3F8E00CFEBA2 /* Function.swift in Sources */,
 				F58CE2792A4C400700CFEBA2 /* Extension+Optional.swift in Sources */,
 				F58CE2692A4C356A00CFEBA2 /* Extension+UIViewController.swift in Sources */,
 				F58CE27B2A4C409600CFEBA2 /* Extension+UICollectionView.swift in Sources */,
 				F58CE2722A4C3EC800CFEBA2 /* Extensions+UINib.swift in Sources */,
-				F58CE2502A4B4E3400CFEBA2 /* FistPageViewModel.swift in Sources */,
+				F58CE2502A4B4E3400CFEBA2 /* InstaLineViewModel.swift in Sources */,
 				F58CE26B2A4C36BD00CFEBA2 /* Comment.swift in Sources */,
 				F5303FAC2A4C946700D8A59C /* CommentPageViewModel.swift in Sources */,
 				F58CE27E2A4C417800CFEBA2 /* PlaceholderTextView.swift in Sources */,

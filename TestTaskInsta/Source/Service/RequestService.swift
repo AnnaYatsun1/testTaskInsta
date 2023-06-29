@@ -26,15 +26,15 @@ class URLBuilder {
 
 class RequestService: APIServiceType {
     
-    let session: URLSession
-    let urlBuilder: URLBuilder
+    private let session: URLSession
+    private let urlBuilder: URLBuilder
     
     init(session: URLSession = .shared, urlBuilder: URLBuilder) {
         self.session = session
         self.urlBuilder = urlBuilder
     }
     
-    func fetchMockComment(completion: @escaping (Result<[Photo], Error>) -> Void) {
+    public func fetchMockComment(completion: @escaping (Result<[Photo], Error>) -> Void) {
         guard let url = self.urlBuilder.catalog() else { return }
         getData(url: url) { result in
             switch result {
@@ -48,7 +48,7 @@ class RequestService: APIServiceType {
         }
     }
     
-    func fetchPhotos(completion: @escaping (Result<[Photo], Error>) -> Void) {
+    public func fetchPhotos(completion: @escaping (Result<[Photo], Error>) -> Void) {
         guard let url = self.urlBuilder.catalog() else { return }
         getData(url: url) { result in
             switch result {

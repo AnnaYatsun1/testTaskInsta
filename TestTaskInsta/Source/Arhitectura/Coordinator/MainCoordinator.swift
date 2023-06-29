@@ -14,7 +14,7 @@ enum MainCoordinatorEvent {
 }
 
 class MainCoordinator {
-    var customViewController: FirstPageViewController?
+    var customViewController: InstaLineViewController?
     
     private(set) var navigationController: UINavigationController
     let eventHandel: (MainCoordinatorEvent) -> ()
@@ -29,8 +29,8 @@ class MainCoordinator {
     func start() {
         let urlBuilder = URLBuilder()
         let requestService = RequestService(urlBuilder: urlBuilder)
-        let customViewModel = FistPageViewModel(requestService: requestService)
-        let customViewController = FirstPageViewController(viewModel: customViewModel)
+        let customViewModel = InstaLineViewModel(requestService: requestService)
+        let customViewController = InstaLineViewController(viewModel: customViewModel)
         
         customViewModel.callbackEvents = handel(event:)
         self.customViewController = customViewController

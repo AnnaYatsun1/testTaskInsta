@@ -12,32 +12,27 @@ enum FistPageViewModelEvents {
     case openMoreScreen
     case openCommentScreen
     case reloadData
-
 }
 
-class FistPageViewModel: BaseViewModel<FistPageViewModelEvents> {
-    let requestService: APIServiceType
+class InstaLineViewModel: BaseViewModel<FistPageViewModelEvents> {
+    private let requestService: APIServiceType
     var photos = [Photo]()
 
+    // MARK: Init
+    
      init(requestService: APIServiceType) {
          self.requestService = requestService
-         
     }
     
-    func getAllInfoPosts(completion: @escaping VoidHandler) {
+    public func getPosts(completion: @escaping VoidHandler) {
         requestService.fetchPhotos() {[weak self] result in
             switch result {
             case let .success(model):
                 self?.photos = model
-                print(self?.photos.count)
-                completion()
-               
-              // update table internal event
+                completion() // update table internal event
             case let .failure(error):
-                print(error)
-                //  internal event show popap with error
+                print(error) //  internal event show popap with error
             }
         }
     }
-
 }

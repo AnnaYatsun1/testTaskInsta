@@ -31,7 +31,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var commentView: UIView?
     @IBOutlet weak var moreBitton: UIButton?
     @IBOutlet weak var postImageView: UIImageView?
-
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var likeButton: UIButton!
@@ -62,18 +61,13 @@ class CustomCollectionViewCell: UICollectionViewCell {
     // MARK: Publick
     
     func fill(model: Photo) {
-        guard let aaa = model.user?.profileImage.small else { return }
-        guard let url = URL(string: aaa) else {return}
-        profileImage?.sd_setImage(with: url)
+        profileImage?.sd_setImage(with: getUL(model).0)
         profileInfo?.text = model.user?.username
-        guard let postImageString = model.urls?.full else { return }
-        guard let postImageUrl = URL(string: postImageString) else {return}
-        postImageView?.sd_setImage(with: postImageUrl) {[weak self]_,_,_,_ in
+        postImageView?.sd_setImage(with: getUL(model).1) {[weak self]_,_,_,_ in
             self?.spiner.stopAnimating()
         }
         countLikes.text = "\(model.likes)"
-        commentPersonImage.sd_setImage(with: url)
- 
+        commentPersonImage.sd_setImage(with: getUL(model).0)
     }
     
     @IBAction func addToFavoriteAction(_ sender: Any) {
@@ -105,7 +99,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
             setImageNameToSelected: Constants.heartFill,
             notSelectedColer: .label,
             selectedColor: .red)
-
         self.isLiked = !isLiked
         
     }
@@ -113,8 +106,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @objc func didDoubleTapToLike() {
         likeButton.checkSelectedState(
             ifSelected: false,
-            setImageNameToNotSelected: "suit.heart",
-            setImageNameToSelected: "suit.heart.fill",
+            setImageNameToNotSelected: Constants.heart,
+            setImageNameToSelected: Constants.heartFill,
             notSelectedColer: .label,
             selectedColor: .red)
         UIView.animate(withDuration: 0.4) {
@@ -128,7 +121,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
                 }
             }
         }
-        
     }
         
     // MARK: Private
@@ -151,10 +143,20 @@ class CustomCollectionViewCell: UICollectionViewCell {
         let tap = UITapGestureRecognizer(target: self,
                                          action: #selector(didDoubleTapToLike))
         tap.numberOfTapsRequired = 1
-       
         postImageView?.isUserInteractionEnabled = true
         postImageView?.addGestureRecognizer(tap)
     }
     
+    private func getUL(_ model: Photo) -> (URL?, URL?) {
+        let postImageURL = model.user.flatMap() {
+            URL(string: $0.profileImage.small)
+        }
+        let profileImageURL = model.urls.flatMap() {
+            URL(string: $0.full)
+        }
+
+        return (postImageURL, profileImageURL)
+        
+    }
 }
 

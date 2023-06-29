@@ -11,11 +11,5 @@ class BaseViewModel<Events> {
     
     typealias EventHandler<Event> = (Event) -> ()
     var callbackEvents: EventHandler<Events>?
-//    public let networking: NetworkingProtocol?
-    
-//    init(networking: NetworkingProtocol? = nil, callbackEvents: @escaping EventHandler<Events>) {
-//        self.networking = networking
-//        self.callbackEvents = callbackEvents
-//    }
     
 }

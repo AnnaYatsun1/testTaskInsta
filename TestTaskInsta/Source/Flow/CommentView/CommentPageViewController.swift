@@ -12,9 +12,8 @@ class CommentPageViewController: BaseViewController<CommentView, CommentPageView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-       
-        viewModel.getAllInfoPosts() {[weak self] in
-            self?.rootView.reloadTable()
+        viewModel.getPosts() {[weak self] in
+            self?.rootView.reloadData()
         }
     }
 }

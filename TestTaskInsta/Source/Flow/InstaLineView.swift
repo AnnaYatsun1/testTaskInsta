@@ -8,10 +8,9 @@
 import UIKit
 
 
-class FistPageView: BaseView<FistPageViewModel>,UICollectionViewDelegate, UICollectionViewDataSource {
+class InstaLineView: BaseView<InstaLineViewModel>,UICollectionViewDelegate, UICollectionViewDataSource {
     private let cellIdentifier = "CustomCollectionViewCell"
-
-    var collectionView = UICollectionView(
+    private var collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout:
             UICollectionViewCompositionalLayout(
@@ -40,7 +39,6 @@ class FistPageView: BaseView<FistPageViewModel>,UICollectionViewDelegate, UIColl
         register()
         collectionView.delegate = self
         collectionView.dataSource = self
-//        reloadData()
     }
      
     override func layoutSubviews() {
@@ -53,28 +51,30 @@ class FistPageView: BaseView<FistPageViewModel>,UICollectionViewDelegate, UIColl
     
     //MARK: Public
     
-    func reloadData() {
+    public func reloadData() {
         dispatchOnMain {
             self.collectionView.reloadData()
         }
     }
     
-    func register() {
+    //MARK: Private
+    
+    private func register() {
         collectionView.register(cellClass: CustomCollectionViewCell.self)
     }
     
     //MARK: Delegate CollectionView
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(viewModel.photos.count)
         return viewModel.photos.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CustomCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: cellIdentifier,
+            for: indexPath) as! CustomCollectionViewCell
         
         cell.fill(model: viewModel.photos[indexPath.item])
-        // Configure the cell
         cell.eventHandel = { [weak self] events in
             switch events {
             case .moreButton:
@@ -84,33 +84,12 @@ class FistPageView: BaseView<FistPageViewModel>,UICollectionViewDelegate, UIColl
             case .share:
                 self?.viewModel.callbackEvents?(.openShareScreen)
             }
-            
         }
-        
         return cell
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
-    }
-}
-
-// MARK: FistPageViewExtension
-
-extension FistPageView: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        return CGSize(width: 400, height: 500)
-//    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-
-        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 0)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        // Return the size for the footer view if needed
-        return CGSize.zero
     }
 }
 
