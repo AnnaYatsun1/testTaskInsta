@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3791C856-3CA9-40CD-A64A-591D21304DE4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D780373-5E42-45BB-9A40-E7ADAE156105"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTaskInsta/Source/Flow/CommentView/CommentPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getAllInfoPosts(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7D780373-5E42-45BB-9A40-E7ADAE156105 - 305cd4dfdac89b9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;TestTaskInsta.Photo&gt;, Swift.Error&gt;) -&gt; () in TestTaskInsta.CommentPageViewModel.getAllInfoPosts(completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "TestTaskInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annayatsun/Desktop/TestTaskInsta/TestTaskInsta/Source/Flow/CommentView/CommentPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "796">
+               </Location>
+               <Location
+                  uuid = "7D780373-5E42-45BB-9A40-E7ADAE156105 - 305cd4dfdac89a7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;TestTaskInsta.Photo&gt;, Swift.Error&gt;) -&gt; () in TestTaskInsta.CommentPageViewModel.getAllInfoPosts(completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "TestTaskInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annayatsun/Desktop/TestTaskInsta/TestTaskInsta/Source/Flow/CommentView/CommentPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03A282B9-E80D-444A-8859-51F4A58F9345"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTaskInsta/Source/Flow/FistPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "FistPageView"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

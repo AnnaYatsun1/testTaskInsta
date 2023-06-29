@@ -1,0 +1,6 @@
+framework module Pods_TestTaskInsta {
+  umbrella header "Pods-TestTaskInsta-umbrella.h"
+
+  export *
+  module * { export * }
+}

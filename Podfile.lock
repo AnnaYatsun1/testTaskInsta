@@ -1,0 +1,26 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.11)
+  - SDWebImage (5.15.6):
+    - SDWebImage/Core (= 5.15.6)
+  - SDWebImage/Core (5.15.6)
+  - Wormholy (1.6.6)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SDWebImage
+  - Wormholy
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SDWebImage
+    - Wormholy
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
+  Wormholy: 09da0b876f9276031fd47383627cb75e194fc068
+
+PODFILE CHECKSUM: ab3b1e29795ec9adb21125eaccce8ff0ba3598a0
+
+COCOAPODS: 1.12.1
